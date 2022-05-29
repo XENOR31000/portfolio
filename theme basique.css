@@ -30,11 +30,63 @@
 .categorie {
 
     font-family: 'Fredoka', sans-serif;
-    font-size: 25px;
+    font-size: 1ypx;
     transition: 0.5s ease-in-out;
+    
 }
 
 .categorie:hover {
 
     font-size: 35px;
+    transition: 0.5s ease-in-out;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+
+}
+
+.textbasique {
+
+    font-family:  'Fredoka', sans-serif ;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+
+  .interaction:hover {
+
+    animation: animatedImage 6s linear infinite;
+  }
+
+  .interaction:hover .interaction1  {
+
+    animation: animatedImage 6s linear infinite;
+  }
+
+  h1 {
+    font-size: 40px !important;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+    animation: glow1 3s ease-in-out infinite alternate;
+
+  }
+
+
+@keyframes glow1 {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff0000, 0 0 40px #eb4c1b, 0 0 50px #f50404, 0 0 60px #e69d00, 0 0 70px #ff0000;
+  }
 }
